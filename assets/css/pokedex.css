@@ -193,6 +193,40 @@ background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(9,75,121,1) 35%, rgb
     height: 10px;
 }
 
+.modal {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 12px;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.modal-header h2, .modal-body {
+    text-transform: capitalize;
+}
+
+.close {
+    background-color: #f00;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+
+.close:hover {
+    cursor: pointer;
+    background-color: rgb(215, 119, 119);
+    transition: .3s ease-in-out;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;

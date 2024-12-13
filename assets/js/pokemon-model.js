@@ -8,16 +8,8 @@ class Pokemon {
 }
 
 class PokemonDetail extends Pokemon {
-    height;
-    abilities;
-    name;
-    species;
+    constructor(name, number, type, types, photo, height, abilities, weight, species) {
+        super(name, number, type, types, photo)
+        Object.assign(this, {name, number, type, types, photo, height, abilities, weight, species})
+    } 
 }
-
-// height,
-// id,
-// cries,
-// abilities,
-// name,
-// species,
-// height
